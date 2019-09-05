@@ -1,0 +1,127 @@
+<html>
+    <head>
+    <title>curriculum vitae</title>
+        <link rel ="stylesheet" type = "text/css" href = "cssFile.css"/>
+    </head>
+      <body>
+          
+          <div class="top" style="background-color: aqua;">
+          <h1>ETIM NDUKEABASI KEVIN</h1>
+              <p><strong>Software Developer</strong></p>
+          </div>
+          <div class="flex-container">
+          <div style="margin-bottom: 20px"> <img src="https://res.cloudinary.com/mento-mume/image/upload/v1566621994/bg1_sitjuy.jpg" alt="ndukeabasi" style="width:200px; height: 200px;">
+          </div>
+              <div> <h2>OBJECTIVE:</h2>
+                  
+            <p> A graduate with second class honors (upper) in BSC computer sscience. hold experience with web development thanks to an internship with HNG i have developed technical skills HTML and CSS.Has proven abilities to meet deadlines,prioritise and solve problems and maintain high standards currently looking to find challenging oppurtunities to meet my competencies and apply my skills to help organization achieve thier business goals</p></div>
+          </div>
+          
+         <div class="flex-container">
+             <div style=" background-color: aqua;margin-right: 50px;">
+                 <div>
+                 <h2>Personal Details</h2>         
+                <table width ="400">
+                 <tr><td>Date Of Birth</td>
+                     <td>7th May 2019</td>
+                 </tr>
+                     <tr><td>State of Origin</td>
+                         <td>Akwa Ibom</td>
+                     </tr>
+                     <tr><td>Local Government </td> 
+                     <td>Essien Udim</td>
+                 </tr>
+                     <tr><td>Marital Status</td>
+                         <td>Single</td>
+                 </tr>
+                 </table>
+               
+                 
+                 <h2>Contact Details</h2>
+          <p>9 Julius Nyerere Crescent Asokoro<br>
+              <p>Abuja Nigeria</p>
+                 <p>+2348164558930</p>
+         <p> jnrkevin001@gmail.com</p>
+            </div>     
+                  <div  class="contact">
+                     <h2>Contact Ndukeabasi</h2>
+                     <form name ="contactForm" onsubmit="return validate()">
+                         
+                         <input type="text" id ="name" name ="fullname" placeholder ="Name" required minlength="4">
+                         <br>
+                         <input type="email" id="email" name="emailaddress" placeholder="Email">
+                         <br>
+                         <input type="text" id="title" name="title" placeholder="Title" >
+                         <br>
+                         <textarea id="Message" name="message" placeholder="Write Message Here" minlength="20"></textarea>
+                         <br>
+                         <input type="submit" value="Send Message"
+                                onclick ="stringlength(document.contactForm.fullname,4)">
+                     </form>
+                      <script src="validate.js"></script>
+                 </div>  
+              
+            </div>
+             <div>
+          <h2>SKILLS</h2>
+          <ul>
+          <li>I am very good with HTML and Css</li>
+          <li>Hardworking</li>
+          <li>Team Player</li>
+          </ul>
+          
+          <h2>EXPERIENCE</h2>
+          <h3>Office of the Head of service, Abuja Nigeria</h3><em> Programme System Analysts II</em>
+          <p>18 May 2018 - PRESENT</p>
+          <h3>Ministry of Local Government and Chieftaincy Affairs, Lafia,Nasarawa</h3> 
+          <p> National Youth Service corp</p>
+          <p>May 2017 - May 2018</p>
+          <h3>Federal Civil Service Commision,Wuse,Abuja  </h3> <em>Intern</em>
+          <p>June 2014 - August 2014</p>
+          <h2>EDUCATION</h2>
+          <h3>Knustford University College, Accra,Ghana </h3> <em>B.sc Computer Science</em>
+          <p>September 2012 - November 2016, East Legon</p>
+          <h3>Topfaith International Secondary School, ESSIEN UDIM, AKWAIBOM</h3> <em>WAEC,NECO</em>
+          <p>September 2006- August 2012</p>
+          <h3>Monef Kiddies School,Uyo, AKWAIBOM</h3>  <em>First School Leaving Certificate</em>
+          <p>September 2002- August 2006</p>
+          </div>
+         </div>
+       
+    </body>
+
+    <script>
+
+        function validate()
+        {
+            if(document.contactForm.fullname.value == "")
+            {
+                alert("please provide your name!");
+                document.contactForm.fullname.focus();
+                return false;
+            }
+
+            if (document.contactForm.emailaddress.value == "")
+            {
+                alert("please provide your email!");
+                document.contactForm.emailaddress.focus();
+                return false;
+            }
+
+            if(document.contactForm.title.value == " ")
+            {
+                alert("please provide your title!");
+                document.contactForm.title.focus();
+                return false;
+            }
+            if(document.contactForm.message.value == " ")
+            {
+                alert("please include your mesage");
+                document.contactForm.message.focus();
+                return false;
+            }
+            return(true);
+        }
+    </script>
+  
+</html>
